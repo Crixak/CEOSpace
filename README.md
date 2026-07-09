@@ -72,6 +72,10 @@ npm run dev                # http://localhost:5173
 - **Empleados**: alta/edición, asignación de sucursal y rol.
 - **Reportes**: ventas por período, productos más vendidos, valorización de inventario, stock crítico.
 
+## Desplegar una versión de prueba online
+
+Para que puedan ir viendo el avance sin montar un servidor propio todavía, ver [`DEPLOY_RAILWAY.md`](./DEPLOY_RAILWAY.md) — pasos para desplegar en Railway (Postgres + API + frontend) conectando directamente este repo de GitHub.
+
 ## Despliegue con Docker
 
 ```bash

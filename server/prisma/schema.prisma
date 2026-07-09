@@ -1,0 +1,166 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  SELLER
+}
+
+enum ProductUnit {
+  KG
+  UNIT
+}
+
+enum StockMovementType {
+  SALE
+  PURCHASE
+  ADJUSTMENT
+}
+
+enum PurchaseOrderStatus {
+  PENDING
+  RECEIVED
+  CANCELLED
+}
+
+model Branch {
+  id        String   @id @default(cuid())
+  name      String
+  address   String?
+  phone     String?
+  createdAt DateTime @default(now())
+
+  users           User[]
+  stocks          Stock[]
+  sales           Sale[]
+  stockMovements  StockMovement[]
+  purchaseOrders  PurchaseOrder[]
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         Role
+  active       Boolean  @default(true)
+  hiredAt      DateTime @default(now())
+  branchId     String?
+  branch       Branch?  @relation(fields: [branchId], references: [id])
+  createdAt    DateTime @default(now())
+
+  sales Sale[]
+}
+
+model Category {
+  id       String    @id @default(cuid())
+  name     String    @unique
+  products Product[]
+}
+
+model Product {
+  id         String      @id @default(cuid())
+  name       String
+  sku        String      @unique
+  categoryId String
+  category   Category    @relation(fields: [categoryId], references: [id])
+  unit       ProductUnit @default(KG)
+  price      Decimal     @db.Decimal(10, 2)
+  costPrice  Decimal     @db.Decimal(10, 2)
+  minStock   Decimal     @default(0) @db.Decimal(10, 3)
+  active     Boolean     @default(true)
+  createdAt  DateTime    @default(now())
+
+  stocks             Stock[]
+  saleItems          SaleItem[]
+  stockMovements     StockMovement[]
+  purchaseOrderItems PurchaseOrderItem[]
+}
+
+model Stock {
+  id        String   @id @default(cuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  branchId  String
+  branch    Branch   @relation(fields: [branchId], references: [id])
+  quantity  Decimal  @default(0) @db.Decimal(10, 3)
+  updatedAt DateTime @updatedAt
+
+  @@unique([productId, branchId])
+}
+
+model StockMovement {
+  id        String            @id @default(cuid())
+  productId String
+  product   Product           @relation(fields: [productId], references: [id])
+  branchId  String
+  branch    Branch            @relation(fields: [branchId], references: [id])
+  type      StockMovementType
+  quantity  Decimal           @db.Decimal(10, 3)
+  refId     String?
+  createdAt DateTime          @default(now())
+}
+
+model Sale {
+  id        String     @id @default(cuid())
+  branchId  String
+  branch    Branch     @relation(fields: [branchId], references: [id])
+  userId    String
+  user      User       @relation(fields: [userId], references: [id])
+  total     Decimal    @db.Decimal(10, 2)
+  createdAt DateTime   @default(now())
+
+  items SaleItem[]
+}
+
+model SaleItem {
+  id        String  @id @default(cuid())
+  saleId    String
+  sale      Sale    @relation(fields: [saleId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Decimal @db.Decimal(10, 3)
+  unitPrice Decimal @db.Decimal(10, 2)
+  subtotal  Decimal @db.Decimal(10, 2)
+}
+
+model Supplier {
+  id      String  @id @default(cuid())
+  name    String
+  cuit    String?
+  phone   String?
+  email   String?
+  address String?
+
+  purchaseOrders PurchaseOrder[]
+}
+
+model PurchaseOrder {
+  id         String              @id @default(cuid())
+  supplierId String
+  supplier   Supplier            @relation(fields: [supplierId], references: [id])
+  branchId   String
+  branch     Branch              @relation(fields: [branchId], references: [id])
+  status     PurchaseOrderStatus @default(PENDING)
+  createdAt  DateTime            @default(now())
+  receivedAt DateTime?
+
+  items PurchaseOrderItem[]
+}
+
+model PurchaseOrderItem {
+  id              String        @id @default(cuid())
+  purchaseOrderId String
+  purchaseOrder   PurchaseOrder @relation(fields: [purchaseOrderId], references: [id], onDelete: Cascade)
+  productId       String
+  product         Product       @relation(fields: [productId], references: [id])
+  quantity        Decimal       @db.Decimal(10, 3)
+  unitCost        Decimal       @db.Decimal(10, 2)
+}

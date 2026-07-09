@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: palacio
+      POSTGRES_PASSWORD: palacio
+      POSTGRES_DB: palacio_jamon
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  server:
+    build: ./server
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgresql://palacio:palacio@postgres:5432/palacio_jamon?schema=public
+      JWT_SECRET: ${JWT_SECRET:-change-this-secret-in-production}
+      PORT: 4000
+    ports:
+      - "4000:4000"
+
+  client:
+    build:
+      context: ./client
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:4000}
+    restart: unless-stopped
+    depends_on:
+      - server
+    ports:
+      - "8080:80"
+
+volumes:
+  postgres_data:

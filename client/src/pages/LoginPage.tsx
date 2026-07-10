@@ -2,6 +2,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { Navigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { Logo } from "../components/Logo";
 
 export function LoginPage() {
   const { user, login } = useAuth();
@@ -28,8 +29,11 @@ export function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-card">
+        <div className="login-card__logo">
+          <Logo size={56} />
+        </div>
         <h1>El Amanecer</h1>
-        <p>Panel de gestión de sucursales</p>
+        <p>Restaurante · Bodegón</p>
         {error && <div className="error-banner">{error}</div>}
         <form onSubmit={handleSubmit}>
           <label>

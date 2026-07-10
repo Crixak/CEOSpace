@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { listBranches } from "../api/branches";
+import { Logo } from "./Logo";
 import type { Branch } from "../types";
 
 const NAV_ITEMS = [
@@ -30,8 +31,11 @@ export function Layout() {
     <div className="app-shell">
       <aside className="sidebar">
         <div className="sidebar__brand">
-          El Amanecer
-          <span>Panel de gestión</span>
+          <Logo size={42} />
+          <div className="sidebar__brand-text">
+            El Amanecer
+            <span>Restaurante · Bodegón</span>
+          </div>
         </div>
         <nav>
           {NAV_ITEMS.filter((item) => item.roles.includes(user.role)).map((item) => (

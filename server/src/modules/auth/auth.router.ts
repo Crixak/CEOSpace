@@ -19,7 +19,10 @@ authRouter.post(
   asyncHandler(async (req, res) => {
     const { email, password } = loginSchema.parse(req.body);
 
-    const user = await prisma.user.findUnique({ where: { email } });
+    const user = await prisma.user.findUnique({
+      where: { email },
+      include: { branch: { select: { id: true, name: true } } },
+    });
     if (!user || !user.active) {
       throw new HttpError(401, "Invalid credentials");
     }
@@ -43,6 +46,7 @@ authRouter.post(
         email: user.email,
         role: user.role,
         branchId: user.branchId,
+        branch: user.branch,
       },
     });
   })

@@ -1,0 +1,3365 @@
+{
+  "categories": [
+    {
+      "name": "Entradas",
+      "items": [
+        {
+          "name": "Empanadas caseras de carne",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 1600,
+              "cashPrice": 1360
+            },
+            "NOCHE": {
+              "price": 2150,
+              "cashPrice": 1827.5
+            },
+            "FINDE": {
+              "price": 2200,
+              "cashPrice": 1870
+            }
+          }
+        },
+        {
+          "name": "Empanadas caseras de cebolla y queso",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 1600,
+              "cashPrice": 1360
+            },
+            "NOCHE": {
+              "price": 2150,
+              "cashPrice": 1827.5
+            },
+            "FINDE": {
+              "price": 2200,
+              "cashPrice": 1870
+            }
+          }
+        },
+        {
+          "name": "Berenjena en escabeche",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 3500,
+              "cashPrice": 2975
+            },
+            "NOCHE": {
+              "price": 4600,
+              "cashPrice": 3910
+            },
+            "FINDE": {
+              "price": 4900,
+              "cashPrice": 4165
+            }
+          }
+        },
+        {
+          "name": "Lengua a la vinagreta",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "NOCHE": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "FINDE": {
+              "price": 7700,
+              "cashPrice": 6545
+            }
+          }
+        },
+        {
+          "name": "Revuelto gramajo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestras Milanesas",
+      "items": [
+        {
+          "name": "Milanesa napolitana completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa cheddar, panceta y verdeo completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa a la criolla completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa a la fugazzeta completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa al verdeo completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa a la barbacoa y cheddar completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa a los 4 quesos completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa brava completa (picante, solo para valientes!!)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa a la capresse completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Milanesa completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 15000,
+              "cashPrice": 12750
+            },
+            "NOCHE": {
+              "price": 20000,
+              "cashPrice": 17000
+            },
+            "FINDE": {
+              "price": 21000,
+              "cashPrice": 17850
+            }
+          }
+        },
+        {
+          "name": "Milanesa napolitana",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 14000,
+              "cashPrice": 11900
+            },
+            "NOCHE": {
+              "price": 20000,
+              "cashPrice": 17000
+            },
+            "FINDE": {
+              "price": 20500,
+              "cashPrice": 17425
+            }
+          }
+        },
+        {
+          "name": "Milanesa de ternera",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "FINDE": {
+              "price": 12700,
+              "cashPrice": 10795
+            }
+          }
+        },
+        {
+          "name": "Milanesa americana completa (barbacoa, cheddar y panceta)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 18500,
+              "cashPrice": 15725
+            },
+            "NOCHE": {
+              "price": 24500,
+              "cashPrice": 20825
+            },
+            "FINDE": {
+              "price": 25500,
+              "cashPrice": 21675
+            }
+          }
+        },
+        {
+          "name": "Suprema napolitana completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema cheddar, panceta y verdeo completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema a la fugazzeta completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema al verdeo completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema a la suiza completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema a la barbacoa y cheddar completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema a la capresse completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema brava completa (picante, solo para valientes!!)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema a los 4 quesos completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema americana completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "FINDE": {
+              "price": 27000,
+              "cashPrice": 22950
+            }
+          }
+        },
+        {
+          "name": "Suprema completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 21500,
+              "cashPrice": 18275
+            },
+            "FINDE": {
+              "price": 22500,
+              "cashPrice": 19125
+            }
+          }
+        },
+        {
+          "name": "Suprema napolitana",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 21500,
+              "cashPrice": 18275
+            },
+            "FINDE": {
+              "price": 22500,
+              "cashPrice": 19125
+            }
+          }
+        },
+        {
+          "name": "Suprema pollo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "NOCHE": {
+              "price": 14000,
+              "cashPrice": 11900
+            },
+            "FINDE": {
+              "price": 15500,
+              "cashPrice": 13175
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Guarniciones",
+      "items": [
+        {
+          "name": "Bocadillos de verdura",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 4600,
+              "cashPrice": 3910
+            },
+            "NOCHE": {
+              "price": 5200,
+              "cashPrice": 4420
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Papas fritas",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "NOCHE": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "FINDE": {
+              "price": 7700,
+              "cashPrice": 6545
+            }
+          }
+        },
+        {
+          "name": "Papas fritas a la provenzal",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "NOCHE": {
+              "price": 8000,
+              "cashPrice": 6800
+            },
+            "FINDE": {
+              "price": 8500,
+              "cashPrice": 7225
+            }
+          }
+        },
+        {
+          "name": "Papas fritas al verdeo",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 9000,
+              "cashPrice": 7650
+            },
+            "FINDE": {
+              "price": 8800,
+              "cashPrice": 7480
+            }
+          }
+        },
+        {
+          "name": "Papas con cheddar, panceta y verdeo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8000,
+              "cashPrice": 6800
+            },
+            "NOCHE": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "FINDE": {
+              "price": 11000,
+              "cashPrice": 9350
+            }
+          }
+        },
+        {
+          "name": "Tortilla de papa",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 9000,
+              "cashPrice": 7650
+            },
+            "NOCHE": {
+              "price": 11500,
+              "cashPrice": 9775
+            },
+            "FINDE": {
+              "price": 12500,
+              "cashPrice": 10625
+            }
+          }
+        },
+        {
+          "name": "Tortilla de verduras",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 9000,
+              "cashPrice": 7650
+            },
+            "NOCHE": {
+              "price": 11500,
+              "cashPrice": 9775
+            },
+            "FINDE": {
+              "price": 12500,
+              "cashPrice": 10625
+            }
+          }
+        },
+        {
+          "name": "Tortilla a la española",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 14000,
+              "cashPrice": 11900
+            },
+            "FINDE": {
+              "price": 14000,
+              "cashPrice": 11900
+            }
+          }
+        },
+        {
+          "name": "Súper tortilla Amanecer",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "NOCHE": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "FINDE": {
+              "price": 16500,
+              "cashPrice": 14025
+            }
+          }
+        },
+        {
+          "name": "Huevos fritos (2 unidades)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2000,
+              "cashPrice": 1700
+            },
+            "NOCHE": {
+              "price": 2500,
+              "cashPrice": 2125
+            },
+            "FINDE": {
+              "price": 2800,
+              "cashPrice": 2380
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ensaladas",
+      "items": [
+        {
+          "name": "Completa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8700,
+              "cashPrice": 7395
+            },
+            "NOCHE": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "FINDE": {
+              "price": 11500,
+              "cashPrice": 9775
+            }
+          }
+        },
+        {
+          "name": "Rúcala con parmesano",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 9000,
+              "cashPrice": 7650
+            }
+          }
+        },
+        {
+          "name": "Mixta",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4600,
+              "cashPrice": 3910
+            },
+            "NOCHE": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Radicheta con ajo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4800,
+              "cashPrice": 4080
+            },
+            "NOCHE": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Rusa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 9000,
+              "cashPrice": 7650
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestras Pastas Caseras",
+      "items": [
+        {
+          "name": "Canelones de verdura",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "NOCHE": {
+              "price": 13000,
+              "cashPrice": 11050
+            },
+            "FINDE": {
+              "price": 14000,
+              "cashPrice": 11900
+            }
+          }
+        },
+        {
+          "name": "Sorrentinos de jamón y queso",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "NOCHE": {
+              "price": 13000,
+              "cashPrice": 11050
+            },
+            "FINDE": {
+              "price": 14000,
+              "cashPrice": 11900
+            }
+          }
+        },
+        {
+          "name": "Ravioles de verdura",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "NOCHE": {
+              "price": 13000,
+              "cashPrice": 11050
+            },
+            "FINDE": {
+              "price": 14000,
+              "cashPrice": 11900
+            }
+          }
+        },
+        {
+          "name": "Tallarines al huevo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "NOCHE": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        },
+        {
+          "name": "Ñoquis de papa",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "NOCHE": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Salsas",
+      "items": [
+        {
+          "name": "Porción de albóndigas (2 unidades)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "NOCHE": {
+              "price": 8000,
+              "cashPrice": 6800
+            },
+            "FINDE": {
+              "price": 8300,
+              "cashPrice": 7055
+            }
+          }
+        },
+        {
+          "name": "Porción de estofado al tuco",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7700,
+              "cashPrice": 6545
+            },
+            "NOCHE": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "FINDE": {
+              "price": 9500,
+              "cashPrice": 8075
+            }
+          }
+        },
+        {
+          "name": "Crema",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4300,
+              "cashPrice": 3655
+            },
+            "NOCHE": {
+              "price": 5300,
+              "cashPrice": 4505
+            },
+            "FINDE": {
+              "price": 5500,
+              "cashPrice": 4675
+            }
+          }
+        },
+        {
+          "name": "Bolognesa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "4 quesos",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "Parisienne",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "Scarparo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "● Fileto/ Blanca/ Mixta",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 1500,
+              "cashPrice": 1275
+            },
+            "NOCHE": {
+              "price": 2000,
+              "cashPrice": 1700
+            },
+            "FINDE": {
+              "price": 2000,
+              "cashPrice": 1700
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestra Parrilla",
+      "items": [
+        {
+          "name": "Parrillada para 2 personas",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 60000,
+              "cashPrice": 51000
+            },
+            "NOCHE": {
+              "price": 70000,
+              "cashPrice": 59500
+            },
+            "FINDE": {
+              "price": 75000,
+              "cashPrice": 63750
+            }
+          }
+        },
+        {
+          "name": "Parrillada para 4 personas",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 110000,
+              "cashPrice": 92400
+            },
+            "NOCHE": {
+              "price": 135000,
+              "cashPrice": 114750
+            },
+            "FINDE": {
+              "price": 140000,
+              "cashPrice": 119000
+            }
+          }
+        },
+        {
+          "name": "Bife de chorizo 750 gr.",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 32000,
+              "cashPrice": 27200
+            },
+            "NOCHE": {
+              "price": 36500,
+              "cashPrice": 31025
+            },
+            "FINDE": {
+              "price": 40000,
+              "cashPrice": 34000
+            }
+          }
+        },
+        {
+          "name": "Bife de chorizo “Amanecer”",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 47000,
+              "cashPrice": 39950
+            },
+            "NOCHE": {
+              "price": 55000,
+              "cashPrice": 46750
+            },
+            "FINDE": {
+              "price": 60000,
+              "cashPrice": 51000
+            }
+          }
+        },
+        {
+          "name": "Matambre tiernizado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 22500,
+              "cashPrice": 19125
+            },
+            "NOCHE": {
+              "price": 27000,
+              "cashPrice": 22950
+            },
+            "FINDE": {
+              "price": 30000,
+              "cashPrice": 25500
+            }
+          }
+        },
+        {
+          "name": "Matambre a la pizza",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 24500,
+              "cashPrice": 20400
+            },
+            "NOCHE": {
+              "price": 29000,
+              "cashPrice": 24650
+            },
+            "FINDE": {
+              "price": 32000,
+              "cashPrice": 27200
+            }
+          }
+        },
+        {
+          "name": "Asado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 25000,
+              "cashPrice": 21250
+            },
+            "NOCHE": {
+              "price": 30000,
+              "cashPrice": 25500
+            },
+            "FINDE": {
+              "price": 33000,
+              "cashPrice": 28050
+            }
+          }
+        },
+        {
+          "name": "Vacío",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 29000,
+              "cashPrice": 24650
+            },
+            "NOCHE": {
+              "price": 35000,
+              "cashPrice": 29750
+            },
+            "FINDE": {
+              "price": 37000,
+              "cashPrice": 31450
+            }
+          }
+        },
+        {
+          "name": "Costillas de cerdo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "NOCHE": {
+              "price": 13500,
+              "cashPrice": 11475
+            },
+            "FINDE": {
+              "price": 13500,
+              "cashPrice": 11475
+            }
+          }
+        },
+        {
+          "name": "Costillitas de cerdo a la riojana",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 24000,
+              "cashPrice": 20400
+            },
+            "NOCHE": {
+              "price": 30000,
+              "cashPrice": 25500
+            },
+            "FINDE": {
+              "price": 31000,
+              "cashPrice": 26350
+            }
+          }
+        },
+        {
+          "name": "Matambrito de cerdo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 25500,
+              "cashPrice": 21675
+            },
+            "NOCHE": {
+              "price": 32000,
+              "cashPrice": 27200
+            },
+            "FINDE": {
+              "price": 35000,
+              "cashPrice": 29750
+            }
+          }
+        },
+        {
+          "name": "Bondiola de cerdo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 21000,
+              "cashPrice": 17850
+            },
+            "NOCHE": {
+              "price": 25000,
+              "cashPrice": 21250
+            },
+            "FINDE": {
+              "price": 28000,
+              "cashPrice": 23800
+            }
+          }
+        },
+        {
+          "name": "Pollo (pata y muslo)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "FINDE": {
+              "price": 13000,
+              "cashPrice": 11050
+            }
+          }
+        },
+        {
+          "name": "Riñoncitos a la provenzal",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 13000,
+              "cashPrice": 11050
+            },
+            "NOCHE": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "FINDE": {
+              "price": 18000,
+              "cashPrice": 15300
+            }
+          }
+        },
+        {
+          "name": "Chinchulines",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "NOCHE": {
+              "price": 13500,
+              "cashPrice": 11475
+            },
+            "FINDE": {
+              "price": 15000,
+              "cashPrice": 12750
+            }
+          }
+        },
+        {
+          "name": "Chorizo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Morcilla",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5000,
+              "cashPrice": 4250
+            },
+            "NOCHE": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Provoleta",
+          "vegetarian": true,
+          "prices": {
+            "DIA": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "NOCHE": {
+              "price": 15000,
+              "cashPrice": 12750
+            },
+            "FINDE": {
+              "price": 16000,
+              "cashPrice": 13600
+            }
+          }
+        },
+        {
+          "name": "Provoleta Amanecer",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 17500,
+              "cashPrice": 14875
+            },
+            "NOCHE": {
+              "price": 21000,
+              "cashPrice": 17850
+            },
+            "FINDE": {
+              "price": 23000,
+              "cashPrice": 19550
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestros Postres",
+      "items": [
+        {
+          "name": "Gran Postre “Amanecer”",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19000,
+              "cashPrice": 16150
+            },
+            "NOCHE": {
+              "price": 23500,
+              "cashPrice": 19975
+            },
+            "FINDE": {
+              "price": 25000,
+              "cashPrice": 21250
+            }
+          }
+        },
+        {
+          "name": "Clásico Don Pedro",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 9500,
+              "cashPrice": 8075
+            }
+          }
+        },
+        {
+          "name": "*NUEVO* Postre “Don Tito”",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 9500,
+              "cashPrice": 8075
+            }
+          }
+        },
+        {
+          "name": "Helado mixto (hasta 3 sabores)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4000,
+              "cashPrice": 3400
+            },
+            "NOCHE": {
+              "price": 5200,
+              "cashPrice": 4420
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Queso y dulce",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4000,
+              "cashPrice": 3400
+            },
+            "NOCHE": {
+              "price": 5200,
+              "cashPrice": 4420
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Ensalada de frutas",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4000,
+              "cashPrice": 3400
+            },
+            "NOCHE": {
+              "price": 5200,
+              "cashPrice": 4420
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Ensalada de frutas con helado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "NOCHE": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "FINDE": {
+              "price": 8000,
+              "cashPrice": 6800
+            }
+          }
+        },
+        {
+          "name": "Flan casero",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3000,
+              "cashPrice": 2550
+            },
+            "NOCHE": {
+              "price": 3800,
+              "cashPrice": 3230
+            },
+            "FINDE": {
+              "price": 4200,
+              "cashPrice": 3570
+            }
+          }
+        },
+        {
+          "name": "Budín de pan casero",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3500,
+              "cashPrice": 2975
+            },
+            "NOCHE": {
+              "price": 4500,
+              "cashPrice": 3825
+            },
+            "FINDE": {
+              "price": 5000,
+              "cashPrice": 4250
+            }
+          }
+        },
+        {
+          "name": "Tarantela casera",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3500,
+              "cashPrice": 2975
+            },
+            "NOCHE": {
+              "price": 4500,
+              "cashPrice": 3825
+            },
+            "FINDE": {
+              "price": 5000,
+              "cashPrice": 4250
+            }
+          }
+        },
+        {
+          "name": "Bombón Suizo/ Escoces/ Almendrado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4000,
+              "cashPrice": 3400
+            },
+            "NOCHE": {
+              "price": 5200,
+              "cashPrice": 4420
+            },
+            "FINDE": {
+              "price": 6000,
+              "cashPrice": 5100
+            }
+          }
+        },
+        {
+          "name": "Almendrado con Charlotte",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 4500,
+              "cashPrice": 3825
+            },
+            "NOCHE": {
+              "price": 6000,
+              "cashPrice": 5100
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        },
+        {
+          "name": "Recargo por crema o dulce",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 1200,
+              "cashPrice": 1020
+            },
+            "NOCHE": {
+              "price": 1500,
+              "cashPrice": 1275
+            },
+            "FINDE": {
+              "price": 1800,
+              "cashPrice": 1530
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bebidas",
+      "items": [
+        {
+          "name": "Gaseosa de vidrio 1 lts (Coca-Cola)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        },
+        {
+          "name": "Gaseosa 1.5 lts",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "NOCHE": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "Gaseosa 500 ml (Pepsi)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3700,
+              "cashPrice": 3145
+            },
+            "NOCHE": {
+              "price": 3700,
+              "cashPrice": 3145
+            },
+            "FINDE": {
+              "price": 3700,
+              "cashPrice": 3145
+            }
+          }
+        },
+        {
+          "name": "Gaseoa 350 ml (Coca-Cola)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3700,
+              "cashPrice": 3145
+            },
+            "NOCHE": {
+              "price": 3700,
+              "cashPrice": 3145
+            },
+            "FINDE": {
+              "price": 3700,
+              "cashPrice": 3145
+            }
+          }
+        },
+        {
+          "name": "Saborizada 1.5 lts",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        },
+        {
+          "name": "Saborizada 500 ml",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2900,
+              "cashPrice": 2465
+            },
+            "NOCHE": {
+              "price": 2900,
+              "cashPrice": 2465
+            },
+            "FINDE": {
+              "price": 2900,
+              "cashPrice": 2465
+            }
+          }
+        },
+        {
+          "name": "Agua 500 ml",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2500,
+              "cashPrice": 2125
+            },
+            "NOCHE": {
+              "price": 2500,
+              "cashPrice": 2125
+            },
+            "FINDE": {
+              "price": 2500,
+              "cashPrice": 2125
+            }
+          }
+        },
+        {
+          "name": "Soda",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2500,
+              "cashPrice": 2125
+            },
+            "NOCHE": {
+              "price": 2500,
+              "cashPrice": 2125
+            },
+            "FINDE": {
+              "price": 2500,
+              "cashPrice": 2125
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cervezas",
+      "items": [
+        {
+          "name": "Quilmes clásica",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "NOCHE": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "FINDE": {
+              "price": 9500,
+              "cashPrice": 8075
+            }
+          }
+        },
+        {
+          "name": "Cerveza negra (consultar marcas disponibles)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "NOCHE": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "FINDE": {
+              "price": 10200,
+              "cashPrice": 8670
+            }
+          }
+        },
+        {
+          "name": "Imperial",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10600,
+              "cashPrice": 9010
+            },
+            "NOCHE": {
+              "price": 10600,
+              "cashPrice": 9010
+            },
+            "FINDE": {
+              "price": 10600,
+              "cashPrice": 9010
+            }
+          }
+        },
+        {
+          "name": "Stella Artois",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "NOCHE": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "FINDE": {
+              "price": 12000,
+              "cashPrice": 10200
+            }
+          }
+        },
+        {
+          "name": "Heineken",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "NOCHE": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "FINDE": {
+              "price": 12000,
+              "cashPrice": 10200
+            }
+          }
+        },
+        {
+          "name": "Patagonia",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 14500,
+              "cashPrice": 12325
+            },
+            "NOCHE": {
+              "price": 14500,
+              "cashPrice": 12325
+            },
+            "FINDE": {
+              "price": 14500,
+              "cashPrice": 12325
+            }
+          }
+        },
+        {
+          "name": "Andes origen (consultar variedades disponibles)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "NOCHE": {
+              "price": 11000,
+              "cashPrice": 9350
+            },
+            "FINDE": {
+              "price": 11000,
+              "cashPrice": 9350
+            }
+          }
+        },
+        {
+          "name": "Cerveza en lata/ porrón (consular marcas disponibles)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cafetería",
+      "items": [
+        {
+          "name": "Café",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2550,
+              "cashPrice": 2167.5
+            },
+            "NOCHE": {
+              "price": 2550,
+              "cashPrice": 2167.5
+            },
+            "FINDE": {
+              "price": 2550,
+              "cashPrice": 2167.5
+            }
+          }
+        },
+        {
+          "name": "Café cortado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2800,
+              "cashPrice": 2380
+            },
+            "NOCHE": {
+              "price": 2800,
+              "cashPrice": 2380
+            },
+            "FINDE": {
+              "price": 2800,
+              "cashPrice": 2380
+            }
+          }
+        },
+        {
+          "name": "Café con crema",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 2900,
+              "cashPrice": 2465
+            },
+            "NOCHE": {
+              "price": 2900,
+              "cashPrice": 2465
+            },
+            "FINDE": {
+              "price": 2900,
+              "cashPrice": 2465
+            }
+          }
+        },
+        {
+          "name": "Café especial “Cafetito”",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 3100,
+              "cashPrice": 2635
+            },
+            "NOCHE": {
+              "price": 3100,
+              "cashPrice": 2635
+            },
+            "FINDE": {
+              "price": 3100,
+              "cashPrice": 2635
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Aperitivos y tragos",
+      "items": [
+        {
+          "name": "Cinzano con Soda",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "NOCHE": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "FINDE": {
+              "price": 5500,
+              "cashPrice": 4675
+            }
+          }
+        },
+        {
+          "name": "Gancia",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "NOCHE": {
+              "price": 5500,
+              "cashPrice": 4675
+            },
+            "FINDE": {
+              "price": 5500,
+              "cashPrice": 4675
+            }
+          }
+        },
+        {
+          "name": "Gancia batido",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 6700,
+              "cashPrice": 5695
+            },
+            "NOCHE": {
+              "price": 6700,
+              "cashPrice": 5695
+            },
+            "FINDE": {
+              "price": 6700,
+              "cashPrice": 5695
+            }
+          }
+        },
+        {
+          "name": "Fernet",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5800,
+              "cashPrice": 4930
+            },
+            "NOCHE": {
+              "price": 5800,
+              "cashPrice": 4930
+            },
+            "FINDE": {
+              "price": 5800,
+              "cashPrice": 4930
+            }
+          }
+        },
+        {
+          "name": "Fernet con Coca-Cola",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        },
+        {
+          "name": "Campari",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5800,
+              "cashPrice": 4930
+            },
+            "NOCHE": {
+              "price": 5800,
+              "cashPrice": 4930
+            },
+            "FINDE": {
+              "price": 5800,
+              "cashPrice": 4930
+            }
+          }
+        },
+        {
+          "name": "Campari + naranja",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "NOCHE": {
+              "price": 7000,
+              "cashPrice": 5950
+            },
+            "FINDE": {
+              "price": 7000,
+              "cashPrice": 5950
+            }
+          }
+        },
+        {
+          "name": "Whisky Ballantines",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "NOCHE": {
+              "price": 7500,
+              "cashPrice": 6375
+            },
+            "FINDE": {
+              "price": 7500,
+              "cashPrice": 6375
+            }
+          }
+        },
+        {
+          "name": "Whisky Johnnie Walker (etiqueta roja)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "NOCHE": {
+              "price": 12000,
+              "cashPrice": 10200
+            },
+            "FINDE": {
+              "price": 12000,
+              "cashPrice": 10200
+            }
+          }
+        },
+        {
+          "name": "Whisky Chivas Regal",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "NOCHE": {
+              "price": 16000,
+              "cashPrice": 13600
+            },
+            "FINDE": {
+              "price": 16000,
+              "cashPrice": 13600
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestros Vinos Tintos",
+      "items": [
+        {
+          "name": "Vino de la casa",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 6700,
+              "cashPrice": 5695
+            },
+            "NOCHE": {
+              "price": 6700,
+              "cashPrice": 5695
+            },
+            "FINDE": {
+              "price": 6700,
+              "cashPrice": 5695
+            }
+          }
+        },
+        {
+          "name": "Benjamín Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "NOCHE": {
+              "price": 9500,
+              "cashPrice": 8075
+            },
+            "FINDE": {
+              "price": 9500,
+              "cashPrice": 8075
+            }
+          }
+        },
+        {
+          "name": "López Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 8600,
+              "cashPrice": 7310
+            }
+          }
+        },
+        {
+          "name": "Lola Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "NOCHE": {
+              "price": 8600,
+              "cashPrice": 7310
+            },
+            "FINDE": {
+              "price": 8600,
+              "cashPrice": 7310
+            }
+          }
+        },
+        {
+          "name": "San Felipe Malbec/Caramagnola",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8800,
+              "cashPrice": 7480
+            },
+            "NOCHE": {
+              "price": 8800,
+              "cashPrice": 7480
+            },
+            "FINDE": {
+              "price": 8800,
+              "cashPrice": 7480
+            }
+          }
+        },
+        {
+          "name": "Don Valentin lacrado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8800,
+              "cashPrice": 7480
+            },
+            "NOCHE": {
+              "price": 8800,
+              "cashPrice": 7480
+            },
+            "FINDE": {
+              "price": 8800,
+              "cashPrice": 7480
+            }
+          }
+        },
+        {
+          "name": "Circus Roble Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "NOCHE": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "FINDE": {
+              "price": 10500,
+              "cashPrice": 8925
+            }
+          }
+        },
+        {
+          "name": "Estiba 1 Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "NOCHE": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "FINDE": {
+              "price": 10500,
+              "cashPrice": 8925
+            }
+          }
+        },
+        {
+          "name": "Latitud 33 Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "NOCHE": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "FINDE": {
+              "price": 17000,
+              "cashPrice": 14450
+            }
+          }
+        },
+        {
+          "name": "Alma Mora",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12100,
+              "cashPrice": 10285
+            },
+            "NOCHE": {
+              "price": 12100,
+              "cashPrice": 10285
+            },
+            "FINDE": {
+              "price": 12100,
+              "cashPrice": 10285
+            }
+          }
+        },
+        {
+          "name": "Escorihuela Gascon Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "FINDE": {
+              "price": 20500,
+              "cashPrice": 17425
+            }
+          }
+        },
+        {
+          "name": "Alamos",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "NOCHE": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "FINDE": {
+              "price": 16300,
+              "cashPrice": 13855
+            }
+          }
+        },
+        {
+          "name": "(Bodega Enrique Foster) “Los Aítepes o Barrancos”",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "NOCHE": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "FINDE": {
+              "price": 17000,
+              "cashPrice": 14450
+            }
+          }
+        },
+        {
+          "name": "(Bodega Mauricio Lorca) \"Lorca Liríco\"",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "NOCHE": {
+              "price": 10500,
+              "cashPrice": 8925
+            },
+            "FINDE": {
+              "price": 10500,
+              "cashPrice": 8925
+            }
+          }
+        },
+        {
+          "name": "Trapiche Alaris",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        },
+        {
+          "name": "Fond de cave",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "NOCHE": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "FINDE": {
+              "price": 17000,
+              "cashPrice": 14450
+            }
+          }
+        },
+        {
+          "name": "Trapiche Reserva",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19000,
+              "cashPrice": 16150
+            },
+            "NOCHE": {
+              "price": 19000,
+              "cashPrice": 16150
+            },
+            "FINDE": {
+              "price": 19000,
+              "cashPrice": 16150
+            }
+          }
+        },
+        {
+          "name": "Trumpeter Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "NOCHE": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "FINDE": {
+              "price": 19500,
+              "cashPrice": 16575
+            }
+          }
+        },
+        {
+          "name": "Rutini Cabernet Franc - Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 39500,
+              "cashPrice": 33575
+            },
+            "NOCHE": {
+              "price": 39500,
+              "cashPrice": 33575
+            },
+            "FINDE": {
+              "price": 39500,
+              "cashPrice": 33575
+            }
+          }
+        },
+        {
+          "name": "Il Caprone - Malbec Bodega Bianchi",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7100,
+              "cashPrice": 6035
+            },
+            "NOCHE": {
+              "price": 7100,
+              "cashPrice": 6035
+            },
+            "FINDE": {
+              "price": 7100,
+              "cashPrice": 6035
+            }
+          }
+        },
+        {
+          "name": "Bianchi Famiglia Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "NOCHE": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "FINDE": {
+              "price": 10200,
+              "cashPrice": 8670
+            }
+          }
+        },
+        {
+          "name": "Bianchi Famiglia Cabernet Franc",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "NOCHE": {
+              "price": 10200,
+              "cashPrice": 8670
+            },
+            "FINDE": {
+              "price": 10200,
+              "cashPrice": 8670
+            }
+          }
+        },
+        {
+          "name": "Don Nicanor",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "FINDE": {
+              "price": 20500,
+              "cashPrice": 17425
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Nuestros Vinos Recomendados",
+      "items": [
+        {
+          "name": "Chateau Vieux",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 22000,
+              "cashPrice": 18700
+            },
+            "NOCHE": {
+              "price": 22000,
+              "cashPrice": 18700
+            },
+            "FINDE": {
+              "price": 22000,
+              "cashPrice": 18700
+            }
+          }
+        },
+        {
+          "name": "Trumpeter Reserva Pinot Noir",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 35200,
+              "cashPrice": 29920
+            },
+            "NOCHE": {
+              "price": 35200,
+              "cashPrice": 29920
+            },
+            "FINDE": {
+              "price": 35200,
+              "cashPrice": 29920
+            }
+          }
+        },
+        {
+          "name": "Bournett Pinot Noir",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "NOCHE": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "FINDE": {
+              "price": 19500,
+              "cashPrice": 16575
+            }
+          }
+        },
+        {
+          "name": "Nieto Senetiner",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "NOCHE": {
+              "price": 17000,
+              "cashPrice": 14450
+            },
+            "FINDE": {
+              "price": 17000,
+              "cashPrice": 14450
+            }
+          }
+        },
+        {
+          "name": "La Linda Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19000,
+              "cashPrice": 16150
+            },
+            "NOCHE": {
+              "price": 19000,
+              "cashPrice": 16150
+            },
+            "FINDE": {
+              "price": 19000,
+              "cashPrice": 16150
+            }
+          }
+        },
+        {
+          "name": "Nicasia Red Blend",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "FINDE": {
+              "price": 20500,
+              "cashPrice": 17425
+            }
+          }
+        },
+        {
+          "name": "Saint Felicien Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 27500,
+              "cashPrice": 23375
+            },
+            "NOCHE": {
+              "price": 27500,
+              "cashPrice": 23375
+            },
+            "FINDE": {
+              "price": 27500,
+              "cashPrice": 23375
+            }
+          }
+        },
+        {
+          "name": "D.V Catena Cabernet-Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 35000,
+              "cashPrice": 29750
+            },
+            "NOCHE": {
+              "price": 35000,
+              "cashPrice": 29750
+            },
+            "FINDE": {
+              "price": 35000,
+              "cashPrice": 29750
+            }
+          }
+        },
+        {
+          "name": "Petit Montchenot Reserva",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 29500,
+              "cashPrice": 25075
+            },
+            "NOCHE": {
+              "price": 29500,
+              "cashPrice": 25075
+            },
+            "FINDE": {
+              "price": 29500,
+              "cashPrice": 25075
+            }
+          }
+        },
+        {
+          "name": "Luigi Bosca",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 32500,
+              "cashPrice": 27625
+            },
+            "NOCHE": {
+              "price": 32500,
+              "cashPrice": 27625
+            },
+            "FINDE": {
+              "price": 32500,
+              "cashPrice": 27625
+            }
+          }
+        },
+        {
+          "name": "Fangio Blend (5 uvas)",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 34200,
+              "cashPrice": 29070
+            },
+            "NOCHE": {
+              "price": 34200,
+              "cashPrice": 29070
+            },
+            "FINDE": {
+              "price": 34200,
+              "cashPrice": 29070
+            }
+          }
+        },
+        {
+          "name": "Rutini Cabernet-Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 31500,
+              "cashPrice": 26775
+            },
+            "NOCHE": {
+              "price": 31500,
+              "cashPrice": 26775
+            },
+            "FINDE": {
+              "price": 31500,
+              "cashPrice": 26775
+            }
+          }
+        },
+        {
+          "name": "Rutini Dominio Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 34700,
+              "cashPrice": 29495
+            },
+            "NOCHE": {
+              "price": 34700,
+              "cashPrice": 29495
+            },
+            "FINDE": {
+              "price": 34700,
+              "cashPrice": 29495
+            }
+          }
+        },
+        {
+          "name": "El Enemigo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 52500,
+              "cashPrice": 44625
+            },
+            "NOCHE": {
+              "price": 52500,
+              "cashPrice": 44625
+            },
+            "FINDE": {
+              "price": 52500,
+              "cashPrice": 44625
+            }
+          }
+        },
+        {
+          "name": "El Gran Enemigo",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 99500,
+              "cashPrice": 84575
+            },
+            "NOCHE": {
+              "price": 99500,
+              "cashPrice": 84575
+            },
+            "FINDE": {
+              "price": 99500,
+              "cashPrice": 84575
+            }
+          }
+        },
+        {
+          "name": "Angelica Zapata",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 98000,
+              "cashPrice": 83300
+            },
+            "NOCHE": {
+              "price": 98000,
+              "cashPrice": 83300
+            },
+            "FINDE": {
+              "price": 98000,
+              "cashPrice": 83300
+            }
+          }
+        },
+        {
+          "name": "Cara Sucia",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "NOCHE": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "FINDE": {
+              "price": 16300,
+              "cashPrice": 13855
+            }
+          }
+        },
+        {
+          "name": "Durigutti Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "NOCHE": {
+              "price": 20500,
+              "cashPrice": 17425
+            },
+            "FINDE": {
+              "price": 20500,
+              "cashPrice": 17425
+            }
+          }
+        },
+        {
+          "name": "Lamadrid Cabernet Franc",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "NOCHE": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "FINDE": {
+              "price": 16300,
+              "cashPrice": 13855
+            }
+          }
+        },
+        {
+          "name": "Lamadrid Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "NOCHE": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "FINDE": {
+              "price": 16300,
+              "cashPrice": 13855
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blancos",
+      "items": [
+        {
+          "name": "López Dulce",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 12600,
+              "cashPrice": 10710
+            },
+            "NOCHE": {
+              "price": 12600,
+              "cashPrice": 10710
+            },
+            "FINDE": {
+              "price": 12600,
+              "cashPrice": 10710
+            }
+          }
+        },
+        {
+          "name": "Norton Cosecha Tardía",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        },
+        {
+          "name": "San Felipe",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "NOCHE": {
+              "price": 10000,
+              "cashPrice": 8500
+            },
+            "FINDE": {
+              "price": 10000,
+              "cashPrice": 8500
+            }
+          }
+        },
+        {
+          "name": "Etchart Privado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 8100,
+              "cashPrice": 6885
+            },
+            "NOCHE": {
+              "price": 8100,
+              "cashPrice": 6885
+            },
+            "FINDE": {
+              "price": 8100,
+              "cashPrice": 6885
+            }
+          }
+        },
+        {
+          "name": "Zun Zun Rosado Dulce",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "NOCHE": {
+              "price": 19500,
+              "cashPrice": 16575
+            },
+            "FINDE": {
+              "price": 19500,
+              "cashPrice": 16575
+            }
+          }
+        },
+        {
+          "name": "Cepa Tradicional Semillón Blanco",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 25800,
+              "cashPrice": 21930
+            },
+            "NOCHE": {
+              "price": 25800,
+              "cashPrice": 21930
+            },
+            "FINDE": {
+              "price": 25800,
+              "cashPrice": 21930
+            }
+          }
+        },
+        {
+          "name": "Trumpeter Blanco Dulce",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 33600,
+              "cashPrice": 28560
+            },
+            "NOCHE": {
+              "price": 33600,
+              "cashPrice": 28560
+            },
+            "FINDE": {
+              "price": 33600,
+              "cashPrice": 28560
+            }
+          }
+        },
+        {
+          "name": "Il Caprone - Rose Bodega Bianchi",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 7100,
+              "cashPrice": 6035
+            },
+            "NOCHE": {
+              "price": 7100,
+              "cashPrice": 6035
+            },
+            "FINDE": {
+              "price": 7100,
+              "cashPrice": 6035
+            }
+          }
+        },
+        {
+          "name": "Marló Blanco Dulce - Bodega Bianchi",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 5700,
+              "cashPrice": 4845
+            },
+            "NOCHE": {
+              "price": 5700,
+              "cashPrice": 4845
+            },
+            "FINDE": {
+              "price": 5700,
+              "cashPrice": 4845
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Espumantes",
+      "items": [
+        {
+          "name": "Murville",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 11600,
+              "cashPrice": 9860
+            },
+            "NOCHE": {
+              "price": 11600,
+              "cashPrice": 9860
+            },
+            "FINDE": {
+              "price": 11600,
+              "cashPrice": 9860
+            }
+          }
+        },
+        {
+          "name": "Bournett Extra Brut",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "NOCHE": {
+              "price": 16300,
+              "cashPrice": 13855
+            },
+            "FINDE": {
+              "price": 16300,
+              "cashPrice": 13855
+            }
+          }
+        },
+        {
+          "name": "Chandon",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 38000,
+              "cashPrice": 32300
+            },
+            "NOCHE": {
+              "price": 38000,
+              "cashPrice": 32300
+            },
+            "FINDE": {
+              "price": 38000,
+              "cashPrice": 32300
+            }
+          }
+        },
+        {
+          "name": "Trumpeter Extra Brut",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 26300,
+              "cashPrice": 22355
+            },
+            "NOCHE": {
+              "price": 26300,
+              "cashPrice": 22355
+            },
+            "FINDE": {
+              "price": 26300,
+              "cashPrice": 22355
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Vinos Recomendados Del Mes",
+      "items": [
+        {
+          "name": "Proyecto Las Compuertas",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 44200,
+              "cashPrice": 37570
+            },
+            "NOCHE": {
+              "price": 44200,
+              "cashPrice": 37570
+            },
+            "FINDE": {
+              "price": 44200,
+              "cashPrice": 37570
+            }
+          }
+        },
+        {
+          "name": "Bournett Malbec Roble",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 15300,
+              "cashPrice": 13005
+            },
+            "NOCHE": {
+              "price": 15300,
+              "cashPrice": 13005
+            },
+            "FINDE": {
+              "price": 15300,
+              "cashPrice": 13005
+            }
+          }
+        },
+        {
+          "name": "Bournett Rosado",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 15300,
+              "cashPrice": 13005
+            },
+            "NOCHE": {
+              "price": 15300,
+              "cashPrice": 13005
+            },
+            "FINDE": {
+              "price": 15300,
+              "cashPrice": 13005
+            }
+          }
+        },
+        {
+          "name": "Matilde Malbec",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 89500,
+              "cashPrice": 76075
+            },
+            "NOCHE": {
+              "price": 89500,
+              "cashPrice": 76075
+            },
+            "FINDE": {
+              "price": 89500,
+              "cashPrice": 76075
+            }
+          }
+        },
+        {
+          "name": "Bianchi Particular Malbec 2021",
+          "vegetarian": false,
+          "prices": {
+            "DIA": {
+              "price": 31500,
+              "cashPrice": 27775
+            },
+            "NOCHE": {
+              "price": 31500,
+              "cashPrice": 27775
+            },
+            "FINDE": {
+              "price": 31500,
+              "cashPrice": 27775
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

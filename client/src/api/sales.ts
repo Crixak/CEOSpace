@@ -17,6 +17,7 @@ export async function getSale(id: string): Promise<Sale> {
 
 export async function createSale(payload: {
   branchId?: string;
+  paymentMethod?: "CASH" | "OTHER";
   items: { productId: string; quantity: number }[];
 }): Promise<Sale> {
   const { data } = await api.post<Sale>("/sales", payload);

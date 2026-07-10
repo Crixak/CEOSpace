@@ -1,6 +1,16 @@
 export type Role = "ADMIN" | "MANAGER" | "SELLER";
 export type ProductUnit = "KG" | "UNIT";
 export type PurchaseOrderStatus = "PENDING" | "RECEIVED" | "CANCELLED";
+export type PriceTier = "DIA" | "NOCHE" | "FINDE";
+export type PaymentMethod = "CASH" | "OTHER";
+
+export interface ProductPrice {
+  id: string;
+  productId: string;
+  tier: PriceTier;
+  price: number | string;
+  cashPrice: number | string;
+}
 
 export interface Branch {
   id: string;
@@ -34,6 +44,9 @@ export interface Product {
   costPrice: number | string;
   minStock: number | string;
   active: boolean;
+  vegetarian?: boolean;
+  description?: string | null;
+  prices?: ProductPrice[];
 }
 
 export interface Stock {
@@ -73,6 +86,8 @@ export interface Sale {
   userId: string;
   user?: { id: string; name: string };
   total: number | string;
+  paymentMethod?: PaymentMethod;
+  priceTier?: PriceTier | null;
   createdAt: string;
   items: SaleItem[];
 }

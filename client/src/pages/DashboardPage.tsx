@@ -71,11 +71,11 @@ export function DashboardPage() {
       <div className="card" style={{ height: 300 }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={month?.byDay ?? []}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e5ded5" />
-            <XAxis dataKey="date" fontSize={12} />
-            <YAxis fontSize={12} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#e8e0d2" vertical={false} />
+            <XAxis dataKey="date" fontSize={12} stroke="#776f63" />
+            <YAxis fontSize={12} stroke="#776f63" />
             <Tooltip formatter={(value) => formatCurrency(Number(value))} />
-            <Bar dataKey="total" fill="#8a2b2b" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="total" fill="#c00000" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

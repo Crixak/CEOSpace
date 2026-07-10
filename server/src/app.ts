@@ -12,6 +12,7 @@ import { purchasesRouter } from "./modules/purchases/purchases.router";
 import { reportsRouter } from "./modules/reports/reports.router";
 import { tablesRouter } from "./modules/tables/tables.router";
 import { ordersRouter } from "./modules/orders/orders.router";
+import { publicMenuRouter } from "./modules/public/menu.router";
 import { errorHandler, notFound } from "./middleware/errorHandler";
 
 export const app = express();
@@ -33,6 +34,7 @@ app.use("/purchases", purchasesRouter);
 app.use("/reports", reportsRouter);
 app.use("/tables", tablesRouter);
 app.use("/orders", ordersRouter);
+app.use("/public", publicMenuRouter);
 
 app.use(notFound);
 app.use(errorHandler);

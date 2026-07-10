@@ -69,6 +69,7 @@ npm run dev                # http://localhost:5173
 - **Ventas (comandas por mesa / take away)**: el mozo abre una mesa (de la lista de mesas de la sucursal) o un pedido take away, le va cargando productos que se guardan en el servidor (la cuenta acumula aunque cambie de pantalla o de dispositivo), y al **cerrar la mesa** se genera la venta con la franja de precios vigente y la forma de pago elegida.
 - **Mesas**: lista fija de mesas por sucursal, administrable por ADMIN/MANAGER. No se puede eliminar una mesa con comanda abierta.
 - **Precios por franja horaria**: cada producto tiene precio de Día / Noche / Fin de semana, con precio de lista y precio efectivo (descuento). La franja se calcula automáticamente en horario de Argentina (sáb/dom → Finde; lun-vie hasta las 18 → Día, desde las 18 → Noche).
+- **Carta pública con QR**: página pública `/carta/:branchId` (sin login) con el diseño de marca de El Amanecer, que muestra la carta completa con los precios de la franja vigente. La sección **Carta QR** (ADMIN/MANAGER) genera el código QR de cada sucursal para imprimir y pegar en las mesas.
 - **Stock**: stock por producto y sucursal para insumos con control de inventario (`tracksStock`), alertas de stock bajo, ajustes manuales trazables (`StockMovement`). Los platos de la carta no descuentan stock.
 - **Proveedores y compras**: alta de proveedores, órdenes de compra, recepción de mercadería que impacta el stock.
 - **Empleados**: alta/edición, asignación de sucursal y rol.

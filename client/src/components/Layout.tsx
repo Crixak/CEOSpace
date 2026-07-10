@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { to: "/", label: "Dashboard", roles: ["ADMIN", "MANAGER"] },
   { to: "/ventas", label: "Ventas", roles: ["ADMIN", "MANAGER", "SELLER"] },
   { to: "/mesas", label: "Mesas", roles: ["ADMIN", "MANAGER"] },
+  { to: "/carta-qr", label: "Carta QR", roles: ["ADMIN", "MANAGER"] },
   { to: "/stock", label: "Stock", roles: ["ADMIN", "MANAGER", "SELLER"] },
   { to: "/compras", label: "Compras", roles: ["ADMIN", "MANAGER"] },
   { to: "/proveedores", label: "Proveedores", roles: ["ADMIN", "MANAGER"] },

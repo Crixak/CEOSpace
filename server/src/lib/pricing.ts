@@ -45,3 +45,19 @@ export function resolveUnitPrice(
   }
   return Number(product.price);
 }
+
+/**
+ * Par (precio de lista, precio efectivo) de un producto para una franja,
+ * usado por la carta pública. Cae al precio base si no hay fila de franja.
+ */
+export function resolveTierPrices(
+  product: { price: unknown; prices?: { tier: PriceTier; price: unknown; cashPrice: unknown }[] },
+  tier: PriceTier
+): { price: number; cashPrice: number } {
+  const tierPrice = product.prices?.find((p) => p.tier === tier);
+  if (tierPrice) {
+    return { price: Number(tierPrice.price), cashPrice: Number(tierPrice.cashPrice) };
+  }
+  const base = Number(product.price);
+  return { price: base, cashPrice: base };
+}

@@ -11,6 +11,8 @@ import { EmpleadosPage } from "./pages/EmpleadosPage";
 import { ProveedoresPage } from "./pages/ProveedoresPage";
 import { ComprasPage } from "./pages/ComprasPage";
 import { ReportesPage } from "./pages/ReportesPage";
+import { CartaQrPage } from "./pages/CartaQrPage";
+import { PublicMenuPage } from "./pages/PublicMenuPage";
 
 // El vendedor no tiene dashboard (no ve ventas del día global): entra directo a Ventas
 function HomePage() {
@@ -25,6 +27,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/carta/:branchId" element={<PublicMenuPage />} />
           <Route element={<ProtectedRoute />}>
             <Route element={<Layout />}>
               <Route path="/" element={<HomePage />} />
@@ -32,6 +35,7 @@ function App() {
               <Route path="/stock" element={<StockPage />} />
               <Route element={<ProtectedRoute roles={["ADMIN", "MANAGER"]} />}>
                 <Route path="/mesas" element={<MesasPage />} />
+                <Route path="/carta-qr" element={<CartaQrPage />} />
                 <Route path="/compras" element={<ComprasPage />} />
                 <Route path="/proveedores" element={<ProveedoresPage />} />
                 <Route path="/empleados" element={<EmpleadosPage />} />

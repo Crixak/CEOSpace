@@ -6,7 +6,7 @@ import { Logo } from "./Logo";
 import type { Branch } from "../types";
 
 const NAV_ITEMS = [
-  { to: "/", label: "Dashboard", roles: ["ADMIN", "MANAGER", "SELLER"] },
+  { to: "/", label: "Dashboard", roles: ["ADMIN", "MANAGER"] },
   { to: "/ventas", label: "Ventas", roles: ["ADMIN", "MANAGER", "SELLER"] },
   { to: "/mesas", label: "Mesas", roles: ["ADMIN", "MANAGER"] },
   { to: "/stock", label: "Stock", roles: ["ADMIN", "MANAGER", "SELLER"] },

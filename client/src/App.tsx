@@ -1,5 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/AuthContext";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { AuthProvider, useAuth } from "./context/AuthContext";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { Layout } from "./components/Layout";
 import { LoginPage } from "./pages/LoginPage";
@@ -12,6 +12,13 @@ import { ProveedoresPage } from "./pages/ProveedoresPage";
 import { ComprasPage } from "./pages/ComprasPage";
 import { ReportesPage } from "./pages/ReportesPage";
 
+// El vendedor no tiene dashboard (no ve ventas del día global): entra directo a Ventas
+function HomePage() {
+  const { user } = useAuth();
+  if (user?.role === "SELLER") return <Navigate to="/ventas" replace />;
+  return <DashboardPage />;
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +27,7 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route element={<ProtectedRoute />}>
             <Route element={<Layout />}>
-              <Route path="/" element={<DashboardPage />} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/ventas" element={<VentasPage />} />
               <Route path="/stock" element={<StockPage />} />
               <Route element={<ProtectedRoute roles={["ADMIN", "MANAGER"]} />}>

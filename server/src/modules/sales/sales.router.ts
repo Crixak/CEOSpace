@@ -1,14 +1,17 @@
 import { Router } from "express";
 import { z } from "zod";
+import { PaymentMethod } from "@prisma/client";
 import { prisma } from "../../lib/prisma";
 import { requireAuth, resolveBranchId } from "../../middleware/auth";
 import { asyncHandler, HttpError } from "../../middleware/errorHandler";
+import { getCurrentTier, resolveUnitPrice } from "../../lib/pricing";
 
 export const salesRouter = Router();
 salesRouter.use(requireAuth);
 
 const createSaleSchema = z.object({
   branchId: z.string().min(1).optional(),
+  paymentMethod: z.nativeEnum(PaymentMethod).default("OTHER"),
   items: z
     .array(
       z.object({
@@ -69,15 +72,17 @@ salesRouter.post(
 
     const products = await prisma.product.findMany({
       where: { id: { in: data.items.map((i) => i.productId) } },
+      include: { prices: true },
     });
     const productMap = new Map(products.map((p) => [p.id, p]));
+    const tier = getCurrentTier();
 
     const sale = await prisma.$transaction(async (tx) => {
       let total = 0;
       const itemsData = data.items.map((item) => {
         const product = productMap.get(item.productId);
         if (!product) throw new HttpError(400, `Product ${item.productId} not found`);
-        const unitPrice = Number(product.price);
+        const unitPrice = resolveUnitPrice(product, tier, data.paymentMethod);
         const subtotal = unitPrice * item.quantity;
         total += subtotal;
         return {
@@ -93,6 +98,8 @@ salesRouter.post(
           branchId,
           userId: req.user!.id,
           total,
+          paymentMethod: data.paymentMethod,
+          priceTier: tier,
           items: { create: itemsData },
         },
         include: { items: true },

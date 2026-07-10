@@ -63,46 +63,6 @@ async function main() {
     },
   });
 
-  const categories = await Promise.all(
-    ["Entradas", "Platos Principales", "Bebidas", "Postres"].map((name) =>
-      prisma.category.upsert({ where: { name }, update: {}, create: { name } })
-    )
-  );
-  const [entradas, platos, bebidas, postres] = categories;
-
-  const products = [
-    { name: "Picada Bodegón", sku: "ENT-001", categoryId: entradas.id, unit: "UNIT", price: 8500, costPrice: 4200, minStock: 5 },
-    { name: "Empanadas (docena)", sku: "ENT-002", categoryId: entradas.id, unit: "UNIT", price: 6000, costPrice: 3000, minStock: 8 },
-    { name: "Provoleta", sku: "ENT-003", categoryId: entradas.id, unit: "UNIT", price: 5200, costPrice: 2600, minStock: 5 },
-    { name: "Milanesa Napolitana", sku: "PLA-001", categoryId: platos.id, unit: "UNIT", price: 9800, costPrice: 5000, minStock: 6 },
-    { name: "Bife de Chorizo", sku: "PLA-002", categoryId: platos.id, unit: "UNIT", price: 13500, costPrice: 7500, minStock: 5 },
-    { name: "Pastel de Papa", sku: "PLA-003", categoryId: platos.id, unit: "UNIT", price: 8200, costPrice: 4000, minStock: 6 },
-    { name: "Vino Tinto (botella)", sku: "BEB-001", categoryId: bebidas.id, unit: "UNIT", price: 7000, costPrice: 4000, minStock: 8 },
-    { name: "Cerveza Artesanal", sku: "BEB-002", categoryId: bebidas.id, unit: "UNIT", price: 3200, costPrice: 1600, minStock: 12 },
-    { name: "Gaseosa Línea", sku: "BEB-003", categoryId: bebidas.id, unit: "UNIT", price: 1800, costPrice: 900, minStock: 15 },
-    { name: "Flan Casero", sku: "POS-001", categoryId: postres.id, unit: "UNIT", price: 3500, costPrice: 1500, minStock: 8 },
-  ] as const;
-
-  for (const product of products) {
-    const created = await prisma.product.upsert({
-      where: { sku: product.sku },
-      update: {},
-      create: product,
-    });
-
-    for (const branch of [branchCentro, branchNorte]) {
-      await prisma.stock.upsert({
-        where: { productId_branchId: { productId: created.id, branchId: branch.id } },
-        update: {},
-        create: {
-          productId: created.id,
-          branchId: branch.id,
-          quantity: 20,
-        },
-      });
-    }
-  }
-
   await prisma.supplier.upsert({
     where: { id: "supplier-default" },
     update: {},
@@ -120,6 +80,7 @@ async function main() {
   console.log("  admin@elamanecer.com (ADMIN)");
   console.log("  encargado.centro@elamanecer.com (MANAGER)");
   console.log("  vendedor.centro@elamanecer.com (SELLER)");
+  console.log("La carta se importa con: npm run menu:import");
 }
 
 main()

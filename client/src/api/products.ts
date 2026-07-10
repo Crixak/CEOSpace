@@ -1,5 +1,10 @@
 import { api } from "./client";
-import type { Category, Product } from "../types";
+import type { Category, PriceTier, Product } from "../types";
+
+export async function fetchCurrentTier(): Promise<PriceTier> {
+  const { data } = await api.get<{ tier: PriceTier }>("/products/current-tier");
+  return data.tier;
+}
 
 export async function listCategories(): Promise<Category[]> {
   const { data } = await api.get<Category[]>("/categories");

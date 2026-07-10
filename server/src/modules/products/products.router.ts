@@ -3,9 +3,14 @@ import { z } from "zod";
 import { prisma } from "../../lib/prisma";
 import { requireAuth, requireRole } from "../../middleware/auth";
 import { asyncHandler, HttpError } from "../../middleware/errorHandler";
+import { getCurrentTier } from "../../lib/pricing";
 
 export const productsRouter = Router();
 productsRouter.use(requireAuth);
+
+productsRouter.get("/current-tier", (_req, res) => {
+  res.json({ tier: getCurrentTier() });
+});
 
 const productSchema = z.object({
   name: z.string().min(1),
@@ -26,7 +31,7 @@ productsRouter.get(
         categoryId: typeof categoryId === "string" ? categoryId : undefined,
         active: active === undefined ? true : active === "true",
       },
-      include: { category: true },
+      include: { category: true, prices: true },
       orderBy: { name: "asc" },
     });
     res.json(products);

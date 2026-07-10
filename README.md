@@ -64,13 +64,25 @@ npm run dev                # http://localhost:5173
 - **MANAGER** (encargado de sucursal): gestiona ventas, stock, compras y proveedores de su propia sucursal.
 - **SELLER** (vendedor): registra ventas y consulta stock de su propia sucursal.
 
-## Módulos incluidos (v1)
+## Módulos incluidos
 
-- **Ventas**: registro rápido de venta por sucursal, descuenta stock automáticamente, historial.
-- **Stock**: stock por producto y sucursal, alertas de stock bajo, ajustes manuales con trazabilidad (`StockMovement`).
+- **Ventas (comandas por mesa / take away)**: el mozo abre una mesa (de la lista de mesas de la sucursal) o un pedido take away, le va cargando productos que se guardan en el servidor (la cuenta acumula aunque cambie de pantalla o de dispositivo), y al **cerrar la mesa** se genera la venta con la franja de precios vigente y la forma de pago elegida.
+- **Mesas**: lista fija de mesas por sucursal, administrable por ADMIN/MANAGER. No se puede eliminar una mesa con comanda abierta.
+- **Precios por franja horaria**: cada producto tiene precio de Día / Noche / Fin de semana, con precio de lista y precio efectivo (descuento). La franja se calcula automáticamente en horario de Argentina (sáb/dom → Finde; lun-vie hasta las 18 → Día, desde las 18 → Noche).
+- **Stock**: stock por producto y sucursal para insumos con control de inventario (`tracksStock`), alertas de stock bajo, ajustes manuales trazables (`StockMovement`). Los platos de la carta no descuentan stock.
 - **Proveedores y compras**: alta de proveedores, órdenes de compra, recepción de mercadería que impacta el stock.
 - **Empleados**: alta/edición, asignación de sucursal y rol.
 - **Reportes**: ventas por período, productos más vendidos, valorización de inventario, stock crítico.
+
+### Importar la carta
+
+La carta real de El Amanecer se importa con:
+
+```bash
+npm run menu:import   # dentro de /server, después del seed
+```
+
+Lee `prisma/menu-data.json` (parseado de los PDF Día/Noche/Fin de semana) y carga categorías, productos y los 3 precios por franja.
 
 ## Desplegar una versión de prueba online
 

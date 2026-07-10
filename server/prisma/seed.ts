@@ -75,6 +75,18 @@ async function main() {
     },
   });
 
+  // Mesas de ejemplo por sucursal (lista fija administrable)
+  for (const branch of [branchCentro, branchNorte]) {
+    for (let n = 1; n <= 8; n++) {
+      const label = `Mesa ${n}`;
+      await prisma.table.upsert({
+        where: { branchId_label: { branchId: branch.id, label } },
+        update: {},
+        create: { branchId: branch.id, label },
+      });
+    }
+  }
+
   console.log("Seed completado.");
   console.log("Usuarios de prueba (password: amanecer123):");
   console.log("  admin@elamanecer.com (ADMIN)");

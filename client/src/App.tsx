@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { LoginPage } from "./pages/LoginPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { VentasPage } from "./pages/VentasPage";
+import { MesasPage } from "./pages/MesasPage";
 import { StockPage } from "./pages/StockPage";
 import { EmpleadosPage } from "./pages/EmpleadosPage";
 import { ProveedoresPage } from "./pages/ProveedoresPage";
@@ -23,6 +24,7 @@ function App() {
               <Route path="/ventas" element={<VentasPage />} />
               <Route path="/stock" element={<StockPage />} />
               <Route element={<ProtectedRoute roles={["ADMIN", "MANAGER"]} />}>
+                <Route path="/mesas" element={<MesasPage />} />
                 <Route path="/compras" element={<ComprasPage />} />
                 <Route path="/proveedores" element={<ProveedoresPage />} />
                 <Route path="/empleados" element={<EmpleadosPage />} />

@@ -3,6 +3,42 @@ export type ProductUnit = "KG" | "UNIT";
 export type PurchaseOrderStatus = "PENDING" | "RECEIVED" | "CANCELLED";
 export type PriceTier = "DIA" | "NOCHE" | "FINDE";
 export type PaymentMethod = "CASH" | "OTHER";
+export type OrderType = "DINE_IN" | "TAKEAWAY";
+export type OrderStatus = "OPEN" | "CLOSED" | "CANCELLED";
+
+export interface Table {
+  id: string;
+  label: string;
+  active: boolean;
+  branchId: string;
+  branch?: { id: string; name: string };
+  occupied: boolean;
+  openOrderId: string | null;
+}
+
+export interface OrderItem {
+  id: string;
+  productId: string;
+  quantity: number | string;
+  product: Product;
+  createdAt: string;
+}
+
+export interface Order {
+  id: string;
+  branchId: string;
+  branch?: { id: string; name: string };
+  userId: string;
+  user?: { id: string; name: string };
+  type: OrderType;
+  tableId: string | null;
+  table?: { id: string; label: string } | null;
+  status: OrderStatus;
+  saleId: string | null;
+  createdAt: string;
+  closedAt?: string | null;
+  items: OrderItem[];
+}
 
 export interface ProductPrice {
   id: string;

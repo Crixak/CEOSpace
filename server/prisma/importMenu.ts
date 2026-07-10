@@ -9,8 +9,6 @@ import menuData from "./menu-data.json";
 
 const prisma = new PrismaClient();
 
-const INITIAL_STOCK = 100; // stock inicial por sucursal para que el POS pueda vender
-
 function slugify(text: string): string {
   return text
     .normalize("NFD")
@@ -22,11 +20,6 @@ function slugify(text: string): string {
 }
 
 async function main() {
-  const branches = await prisma.branch.findMany();
-  if (branches.length === 0) {
-    console.warn("⚠ No hay sucursales cargadas; corré primero el seed (npm run prisma:seed).");
-  }
-
   let createdProducts = 0;
   let updatedPrices = 0;
 
@@ -49,6 +42,7 @@ async function main() {
           vegetarian: item.vegetarian,
           price: basePrice,
           active: true,
+          tracksStock: false,
         },
         create: {
           name: item.name,
@@ -59,6 +53,7 @@ async function main() {
           costPrice: 0,
           minStock: 0,
           vegetarian: item.vegetarian,
+          tracksStock: false,
         },
       });
       createdProducts++;
@@ -77,14 +72,6 @@ async function main() {
           },
         });
         updatedPrices++;
-      }
-
-      for (const branch of branches) {
-        await prisma.stock.upsert({
-          where: { productId_branchId: { productId: product.id, branchId: branch.id } },
-          update: {},
-          create: { productId: product.id, branchId: branch.id, quantity: INITIAL_STOCK },
-        });
       }
     }
   }

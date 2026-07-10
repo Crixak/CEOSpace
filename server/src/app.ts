@@ -10,6 +10,8 @@ import { salesRouter } from "./modules/sales/sales.router";
 import { suppliersRouter } from "./modules/suppliers/suppliers.router";
 import { purchasesRouter } from "./modules/purchases/purchases.router";
 import { reportsRouter } from "./modules/reports/reports.router";
+import { tablesRouter } from "./modules/tables/tables.router";
+import { ordersRouter } from "./modules/orders/orders.router";
 import { errorHandler, notFound } from "./middleware/errorHandler";
 
 export const app = express();
@@ -29,6 +31,8 @@ app.use("/sales", salesRouter);
 app.use("/suppliers", suppliersRouter);
 app.use("/purchases", purchasesRouter);
 app.use("/reports", reportsRouter);
+app.use("/tables", tablesRouter);
+app.use("/orders", ordersRouter);
 
 app.use(notFound);
 app.use(errorHandler);

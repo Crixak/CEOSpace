@@ -4,7 +4,7 @@ import { PaymentMethod } from "@prisma/client";
 import { prisma } from "../../lib/prisma";
 import { requireAuth, resolveBranchId } from "../../middleware/auth";
 import { asyncHandler, HttpError } from "../../middleware/errorHandler";
-import { getCurrentTier, resolveUnitPrice } from "../../lib/pricing";
+import { createSaleInTx } from "./sales.service";
 
 export const salesRouter = Router();
 salesRouter.use(requireAuth);
@@ -70,65 +70,14 @@ salesRouter.post(
       throw new HttpError(403, "Cannot register a sale outside your branch");
     }
 
-    const products = await prisma.product.findMany({
-      where: { id: { in: data.items.map((i) => i.productId) } },
-      include: { prices: true },
-    });
-    const productMap = new Map(products.map((p) => [p.id, p]));
-    const tier = getCurrentTier();
-
-    const sale = await prisma.$transaction(async (tx) => {
-      let total = 0;
-      const itemsData = data.items.map((item) => {
-        const product = productMap.get(item.productId);
-        if (!product) throw new HttpError(400, `Product ${item.productId} not found`);
-        const unitPrice = resolveUnitPrice(product, tier, data.paymentMethod);
-        const subtotal = unitPrice * item.quantity;
-        total += subtotal;
-        return {
-          productId: item.productId,
-          quantity: item.quantity,
-          unitPrice,
-          subtotal,
-        };
-      });
-
-      const created = await tx.sale.create({
-        data: {
-          branchId,
-          userId: req.user!.id,
-          total,
-          paymentMethod: data.paymentMethod,
-          priceTier: tier,
-          items: { create: itemsData },
-        },
-        include: { items: true },
-      });
-
-      for (const item of itemsData) {
-        const stock = await tx.stock.findUnique({
-          where: { productId_branchId: { productId: item.productId, branchId } },
-        });
-        if (!stock || Number(stock.quantity) < item.quantity) {
-          throw new HttpError(400, `Insufficient stock for product ${item.productId}`);
-        }
-        await tx.stock.update({
-          where: { productId_branchId: { productId: item.productId, branchId } },
-          data: { quantity: { decrement: item.quantity } },
-        });
-        await tx.stockMovement.create({
-          data: {
-            productId: item.productId,
-            branchId,
-            type: "SALE",
-            quantity: -item.quantity,
-            refId: created.id,
-          },
-        });
-      }
-
-      return created;
-    });
+    const sale = await prisma.$transaction((tx) =>
+      createSaleInTx(tx, {
+        branchId,
+        userId: req.user!.id,
+        paymentMethod: data.paymentMethod,
+        items: data.items,
+      })
+    );
 
     res.status(201).json(sale);
   })

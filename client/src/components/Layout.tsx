@@ -30,7 +30,7 @@ export function Layout() {
     <div className="app-shell">
       <aside className="sidebar">
         <div className="sidebar__brand">
-          El Palacio del Jamón
+          El Amanecer
           <span>Panel de gestión</span>
         </div>
         <nav>

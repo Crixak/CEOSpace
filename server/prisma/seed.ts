@@ -6,10 +6,10 @@ const prisma = new PrismaClient();
 async function main() {
   const branchCentro = await prisma.branch.upsert({
     where: { id: "branch-centro" },
-    update: {},
+    update: { name: "El Amanecer - Centro", address: "Av. Principal 123", phone: "011-4444-0001" },
     create: {
       id: "branch-centro",
-      name: "El Palacio del Jamón - Centro",
+      name: "El Amanecer - Centro",
       address: "Av. Principal 123",
       phone: "011-4444-0001",
     },
@@ -17,34 +17,34 @@ async function main() {
 
   const branchNorte = await prisma.branch.upsert({
     where: { id: "branch-norte" },
-    update: {},
+    update: { name: "El Amanecer - Norte", address: "Av. Libertador 456", phone: "011-4444-0002" },
     create: {
       id: "branch-norte",
-      name: "El Palacio del Jamón - Norte",
+      name: "El Amanecer - Norte",
       address: "Av. Libertador 456",
       phone: "011-4444-0002",
     },
   });
 
-  const passwordHash = await bcrypt.hash("palacio123", 10);
+  const passwordHash = await bcrypt.hash("amanecer123", 10);
 
   await prisma.user.upsert({
-    where: { email: "admin@palaciodeljamon.com" },
+    where: { email: "admin@elamanecer.com" },
     update: {},
     create: {
       name: "Administrador",
-      email: "admin@palaciodeljamon.com",
+      email: "admin@elamanecer.com",
       passwordHash,
       role: "ADMIN",
     },
   });
 
   await prisma.user.upsert({
-    where: { email: "encargado.centro@palaciodeljamon.com" },
+    where: { email: "encargado.centro@elamanecer.com" },
     update: {},
     create: {
       name: "Encargado Centro",
-      email: "encargado.centro@palaciodeljamon.com",
+      email: "encargado.centro@elamanecer.com",
       passwordHash,
       role: "MANAGER",
       branchId: branchCentro.id,
@@ -52,11 +52,11 @@ async function main() {
   });
 
   await prisma.user.upsert({
-    where: { email: "vendedor.centro@palaciodeljamon.com" },
+    where: { email: "vendedor.centro@elamanecer.com" },
     update: {},
     create: {
-      name: "Vendedor Centro",
-      email: "vendedor.centro@palaciodeljamon.com",
+      name: "Mozo Centro",
+      email: "vendedor.centro@elamanecer.com",
       passwordHash,
       role: "SELLER",
       branchId: branchCentro.id,
@@ -64,21 +64,23 @@ async function main() {
   });
 
   const categories = await Promise.all(
-    ["Fiambres", "Quesos", "Almacén"].map((name) =>
+    ["Entradas", "Platos Principales", "Bebidas", "Postres"].map((name) =>
       prisma.category.upsert({ where: { name }, update: {}, create: { name } })
     )
   );
-  const [fiambres, quesos, almacen] = categories;
+  const [entradas, platos, bebidas, postres] = categories;
 
   const products = [
-    { name: "Jamón Crudo", sku: "FIA-001", categoryId: fiambres.id, unit: "KG", price: 12500, costPrice: 8500, minStock: 3 },
-    { name: "Jamón Cocido", sku: "FIA-002", categoryId: fiambres.id, unit: "KG", price: 9800, costPrice: 6500, minStock: 5 },
-    { name: "Salame Milán", sku: "FIA-003", categoryId: fiambres.id, unit: "KG", price: 11000, costPrice: 7200, minStock: 3 },
-    { name: "Mortadela", sku: "FIA-004", categoryId: fiambres.id, unit: "KG", price: 7500, costPrice: 4800, minStock: 4 },
-    { name: "Queso Sardo", sku: "QUE-001", categoryId: quesos.id, unit: "KG", price: 10500, costPrice: 7000, minStock: 3 },
-    { name: "Queso Cremoso", sku: "QUE-002", categoryId: quesos.id, unit: "KG", price: 8900, costPrice: 5800, minStock: 4 },
-    { name: "Aceitunas Verdes", sku: "ALM-001", categoryId: almacen.id, unit: "KG", price: 4200, costPrice: 2600, minStock: 5 },
-    { name: "Pan Rallado 500g", sku: "ALM-002", categoryId: almacen.id, unit: "UNIT", price: 1800, costPrice: 1100, minStock: 10 },
+    { name: "Picada Bodegón", sku: "ENT-001", categoryId: entradas.id, unit: "UNIT", price: 8500, costPrice: 4200, minStock: 5 },
+    { name: "Empanadas (docena)", sku: "ENT-002", categoryId: entradas.id, unit: "UNIT", price: 6000, costPrice: 3000, minStock: 8 },
+    { name: "Provoleta", sku: "ENT-003", categoryId: entradas.id, unit: "UNIT", price: 5200, costPrice: 2600, minStock: 5 },
+    { name: "Milanesa Napolitana", sku: "PLA-001", categoryId: platos.id, unit: "UNIT", price: 9800, costPrice: 5000, minStock: 6 },
+    { name: "Bife de Chorizo", sku: "PLA-002", categoryId: platos.id, unit: "UNIT", price: 13500, costPrice: 7500, minStock: 5 },
+    { name: "Pastel de Papa", sku: "PLA-003", categoryId: platos.id, unit: "UNIT", price: 8200, costPrice: 4000, minStock: 6 },
+    { name: "Vino Tinto (botella)", sku: "BEB-001", categoryId: bebidas.id, unit: "UNIT", price: 7000, costPrice: 4000, minStock: 8 },
+    { name: "Cerveza Artesanal", sku: "BEB-002", categoryId: bebidas.id, unit: "UNIT", price: 3200, costPrice: 1600, minStock: 12 },
+    { name: "Gaseosa Línea", sku: "BEB-003", categoryId: bebidas.id, unit: "UNIT", price: 1800, costPrice: 900, minStock: 15 },
+    { name: "Flan Casero", sku: "POS-001", categoryId: postres.id, unit: "UNIT", price: 3500, costPrice: 1500, minStock: 8 },
   ] as const;
 
   for (const product of products) {
@@ -95,7 +97,7 @@ async function main() {
         create: {
           productId: created.id,
           branchId: branch.id,
-          quantity: 15,
+          quantity: 20,
         },
       });
     }
@@ -106,18 +108,18 @@ async function main() {
     update: {},
     create: {
       id: "supplier-default",
-      name: "Distribuidora Fiambres SA",
+      name: "Distribuidora de Alimentos SA",
       cuit: "30-12345678-9",
       phone: "011-5555-0001",
-      email: "ventas@distribuidorafiambres.com",
+      email: "ventas@distribuidoraalimentos.com",
     },
   });
 
   console.log("Seed completado.");
-  console.log("Usuarios de prueba (password: palacio123):");
-  console.log("  admin@palaciodeljamon.com (ADMIN)");
-  console.log("  encargado.centro@palaciodeljamon.com (MANAGER)");
-  console.log("  vendedor.centro@palaciodeljamon.com (SELLER)");
+  console.log("Usuarios de prueba (password: amanecer123):");
+  console.log("  admin@elamanecer.com (ADMIN)");
+  console.log("  encargado.centro@elamanecer.com (MANAGER)");
+  console.log("  vendedor.centro@elamanecer.com (SELLER)");
 }
 
 main()

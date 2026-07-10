@@ -28,7 +28,7 @@ export function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h1>El Palacio del Jamón</h1>
+        <h1>El Amanecer</h1>
         <p>Panel de gestión de sucursales</p>
         {error && <div className="error-banner">{error}</div>}
         <form onSubmit={handleSubmit}>

@@ -1,6 +1,6 @@
-# El Palacio del Jamón — App de gestión
+# El Amanecer — App de gestión
 
-Aplicación de gestión para una fiambrería con varias sucursales: ventas, stock, empleados, proveedores y compras, con reportes/dashboard.
+Aplicación de gestión para un restaurant/bodegón con varias sucursales: ventas, stock, empleados, proveedores y compras, con reportes/dashboard.
 
 ## Stack
 
@@ -43,11 +43,11 @@ npm run prisma:seed
 npm run dev               # http://localhost:4000
 ```
 
-El seed crea 2 sucursales, categorías y productos de ejemplo, y estos usuarios (contraseña `palacio123`):
+El seed crea 2 sucursales, categorías y productos de ejemplo, y estos usuarios (contraseña `amanecer123`):
 
-- `admin@palaciodeljamon.com` — ADMIN (ve todas las sucursales)
-- `encargado.centro@palaciodeljamon.com` — MANAGER (sucursal Centro)
-- `vendedor.centro@palaciodeljamon.com` — SELLER (sucursal Centro)
+- `admin@elamanecer.com` — ADMIN (ve todas las sucursales)
+- `encargado.centro@elamanecer.com` — MANAGER (sucursal Centro)
+- `vendedor.centro@elamanecer.com` — SELLER (sucursal Centro)
 
 ### 3. Frontend
 
